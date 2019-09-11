@@ -1,0 +1,47 @@
+﻿2 types:
+        Small-vocabulary/many-users:
+                More accurate
+                Handle accents better
+                Limited vocabulary
+                Does not work as well with sentences
+                
+        large-Vocabulary/limited-users:
+Accuracy (85% with expert user) ← knows the syntax and speaks clearly and  
+      in a predictable way
+                Larger vocabulary
+                Best for well trained users
+
+
+
+
+Steps:
+        Analog signal(voice) to digital conversion:
+                First step in speech processing, is taking an audio signal and transforming it to a usable data structure. (Communication stuff look at SYSC 3501 notes)
+        
+        “Next the signal is divided into small segments as short as a few hundredths of a second, or even thousandths in the case of plosive consonant sounds -- consonant stops produced by obstructing airflow in the vocal tract -- like "p" or "t." The program then matches these segments to known phonemes in the appropriate language. A phoneme is the smallest element of a language -- a representation of the sounds we make and put together to form meaningful expressions. There are roughly 40 phonemes in the English language (different linguists have different opinions on the exact number), while other languages have more or fewer phonemes.” (insert citation) https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/speech-recognition1.htm
+
+
+ML Part:
+Statistical modeling system, use these `phoneme` to determine the most likely matching words.
+        Note: 
+                Look into Hidden Markov Model(most common)
+
+
+Then we have text!
+
+
+What to look for in our NLPs:
+Editable dictionaries(best way to improve accuracy)
+Editable language syntax (a→ b → c/d )
+
+
+Written in languages that are great for math! (R, python)
+
+
+
+
+Key-Words:
+        discrete speech:
+                Speech that is broken up with a distinct pause between words
+        Continuous speech:
+                Normal conversation speech
